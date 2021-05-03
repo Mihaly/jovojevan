@@ -1,0 +1,49 @@
+@import "../config.scss";
+
+.footer {
+  background: #eae8e5;
+
+  .footerInner {
+    margin: 0 auto;
+    max-width: $content-max-width;
+    padding: $container-padding;
+  }
+
+  .title {
+    border-bottom: 1px solid rgba(50, 20, 10, 0.1);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 2rem 0 1.6rem 0;
+    padding: 0 0 0.5rem;
+    text-transform: uppercase;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .tamogatok {
+    display: flex;
+    flex-wrap: wrap;
+
+    & > a {
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 0 0.5rem 0 0;
+      text-align: center;
+      text-decoration: none;
+      width: 10rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
+  .tamogatoLogo {
+    height: 5rem;
+    margin: 0 0 0.3rem;
+  }
+}

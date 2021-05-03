@@ -1,0 +1,71 @@
+@import "../config.scss";
+
+.header {
+  background: #fff;
+  border-bottom: 7px solid $color-primary;
+
+  .siteName {
+    font-size: 1.4rem;
+    margin: 0 0 0 1.5rem;
+  }
+
+  .headerInner {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: $content-max-width;
+    padding: $container-padding / 2 $container-padding 0;
+  }
+
+  .logoOuter {
+    background: #fff;
+    border: 0.5rem solid $color-primary;
+    border-radius: 50%;
+    box-sizing: content-box;
+    height: 5rem;
+    margin: 0 0 -2rem;
+    position: relative;
+    width: 5rem;
+  }
+
+  .logoInner {
+    background: #fff;
+    height: 4rem;
+    left: -0.5rem;
+    position: absolute;
+    top: -0.5rem;
+    width: 6rem;
+  }
+
+  .logoImage {
+    height: 4rem;
+    left: 1rem;
+    position: absolute;
+    top: 0.5rem;
+    width: 4rem;
+  }
+
+  .siteNavigation {
+    margin: 0 0 0 auto;
+
+    & > a {
+      color: inherit;
+      font-family: $font-primary;
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin: 0 0 1rem;
+      text-decoration: none;
+
+      &.active {
+        text-decoration: underline;
+      }
+    }
+
+    .navBullet {
+      color: #ddd;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 0 1rem;
+    }
+  }
+}
